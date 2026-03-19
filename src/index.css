@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sma-blue: #034CB2;
+  --color-sma-blue-dark: #02367D;
+  --color-sma-blue-light: #1A5FCC;
+  --color-sma-gold: #C8880A;
+  --color-sma-gold-light: #E0A020;
+  --color-sma-gold-dark: #9A6A08;
+  --color-sma-cream: #FDF8F0;
+}
