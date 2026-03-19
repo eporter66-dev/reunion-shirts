@@ -3,12 +3,16 @@ import UploadForm from "./components/UploadForm";
 import DesignGallery from "./components/DesignGallery";
 import Countdown, { isVotingOpen } from "./components/Countdown";
 import smaLogo from "./assets/sma-logo.png";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [showUpload, setShowUpload] = useState(false);
   const votingOpen = isVotingOpen();
 
   return (
+    
+    <>
+    <Analytics />
     <div className="min-h-screen bg-sma-cream">
       <header className="bg-sma-blue sticky top-0 z-10 shadow-md">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -52,6 +56,7 @@ function App() {
         </p>
       </footer>
     </div>
+    </>
   );
 }
 
